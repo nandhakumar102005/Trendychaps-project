@@ -1,0 +1,52 @@
+{
+    "Products": [
+        {
+            "id": 1,
+            "name": " Classic Black Shirt",
+            "img": "/assets/product1.png",
+            "price":450
+        },
+        {
+            "id": 2,
+            "name": " Classic Blue Shirt",
+            "img": "/assets/product2.png",
+            "price":450
+        },
+        {
+            "id": 3,
+            "name": " Premium Printed Shirt",
+            "img": "/assets/product3.png",
+            "price":450
+        },
+        {
+            "id": 4,
+            "name": "White Shirt combo ",
+            "img": "/assets/product4.png",
+            "price":800
+        },
+        {
+            "id": 5,
+            "name": "  Printed Shirt combo",
+            "img": "/assets/product5.png",
+            "price":800
+        },
+        {
+            "id": 6,
+            "name": " Classic Brown Shirt",
+            "img": "/assets/product6.png",
+            "price":450
+        },
+        {
+            "id": 7,
+            "name": " Printed White Shirt",
+            "img": "/assets/product7.png",
+            "price":500
+        },
+        {
+            "id": 8,
+            "name": " Blue and White Shirt",
+            "img": "/assets/product8.png",
+            "price":450
+        }
+    ]
+}
