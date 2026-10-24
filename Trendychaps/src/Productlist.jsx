@@ -3,29 +3,33 @@ import Product from "./Product"
 import { useState } from "react";
 import Herosec from "./Herosec";
 import Itemsshow from "./Itemsshow";
+import ProductData from "../../data/ProductData.json";
 
 function Productlist() {
 
-   const [products,setProducts] = useState(null)
+   const [products,setProducts] = useState(
+    Array.isArray(ProductData) ? ProductData : ProductData.Products || [] )
    const [searchquery,setSearchquery] = useState("")   
 
-    useEffect(()=>{
-        //  fetch("http://localhost:3000/Products")
-        //  fetch(`http://${window.location.hostname}:3000/Products`)
-        fetch("https://raw.githubusercontent.com/nandhakumar102005/Trendy-chaps/refs/heads/main/ProductData.json")
-        .then((response)=>{
-            if(response.ok){
-            console.log("API Fetched Sucessfully")
-            return response.json()
-            }
-        })
-        .then((data)=>{
-            setProducts(data)
-        })
-        .catch((error)=>{
-            console.log("error Fetching Product")
-        })
-    },[]);
+    // useEffect(()=>{
+    //     //  fetch("http://localhost:3000/Products")
+    //      fetch(`http://${window.location.hostname}:3000/Products`)
+        
+    //     .then((response)=>{
+    //         if(response.ok){
+    //         console.log("API Fetched Sucessfully")
+    //         return response.json()
+    //         }
+    //     })
+    //     .then((data)=>{
+    //         setProducts(data)
+    //     })
+    //     .catch((error)=>{
+    //         console.log("error Fetching Product")
+    //     })
+    // },[]);
+
+    
 
     if(!products||products.length==0){
         return(
