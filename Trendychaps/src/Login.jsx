@@ -27,7 +27,7 @@ function Login() {
 
                 <div className="container" id="logForm-cont">
                     <h1 className="text-center" style={{ color: "white", marginTop: "25px" }}>Trendy Chaps</h1>
-                    <h6 className="text-center " style={{ color: "white", marginTop: "7px" }}>Create your Account</h6>
+                    <h6 className="text-center " style={{ color: "white", marginTop: "7px" }}>Login your Account</h6>
                     <form  onSubmit={handleLogin} id="log-form">
 
                         <label style={{ color: "white", marginTop: "10px", fontSize: "1.2rem" }}>E-mail</label>
