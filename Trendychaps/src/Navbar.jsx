@@ -48,14 +48,14 @@ function Navbar(){
                         </div>
 
                         <div className="nav-item">
-                     <a href="#About-show">   <div className="d-flex flex-column align-items-center" style={{cursor:"pointer"}}>
+                     <a href="#About-show" onClick={CloseMenu}>   <div className="d-flex flex-column align-items-center" style={{cursor:"pointer"}}>
                                 <img id="img" src={About} alt="About Us" />
                                 <p id="nav-p" className="fw-bold mb-0">ABOUT US</p>
                             </div></a>
                         </div>
 
                         <div className="nav-item">
-                         <Link to="/app/Contact">   <div className="d-flex flex-column align-items-center" style={{cursor:"pointer"}}>
+                         <Link to="/app/Contact" onClick={CloseMenu}>   <div className="d-flex flex-column align-items-center" style={{cursor:"pointer"}}>
                                 <img id="img" src={contact} alt="Contact Us" />
                                 <p id="nav-p" className="fw-bold mb-0">CONTACT US</p>
                             </div></Link>
