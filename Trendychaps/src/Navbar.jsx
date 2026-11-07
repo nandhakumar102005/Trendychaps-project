@@ -7,12 +7,20 @@ import { Link, } from "react-router-dom"
 
 function Navbar(){
 
-    const CloseMenu =()=>{
-        const navMenu = document.querySelector(".navbar-collapse");
-        if(navMenu && navMenu.classList.contains('show')){
-            navMenu.classList.remove('show')
-        }
-    }    
+    // const CloseMenu =()=>{
+    //     const navMenu = document.querySelector(".navbar-collapse");
+    //     if(navMenu && navMenu.classList.contains('show')){
+    //         navMenu.classList.remove('show')
+    //     }
+    // }  
+
+    const CloseMenu = () => {
+    const navMenu = document.querySelector(".navbar-collapse");
+    const toggler = document.querySelector(".navbar-toggler");
+    if (navMenu && navMenu.classList.contains("show")) {
+        toggler.click(); 
+    }
+}
     
     return(
         <>
