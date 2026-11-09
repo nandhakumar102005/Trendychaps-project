@@ -26,6 +26,11 @@ function About(){
                 <p><a style={{textDecoration:"none", color:"white"}} href="https://www.instagram.com/trendy_chaps_/">Instagram </a></p>
                 </div>
             </div>
+
+              <div className="text-center mt-5">
+                
+                 <p className="mt-4">2026 Trendy Chaps. All Rights Reserved</p>
+            </div>
          
         </div>
 
